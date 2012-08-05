@@ -212,14 +212,13 @@ Typing tip: The UP ARROW
 
 This document was written using a minimalist markup language called [Markdown](http://daringfireball.net/projects/markdown/syntax). It's very handy.
 
-If you `cat README.md` and then copy/paste the contents into the [Markdown Dingus](http://daringfireball.net/projects/markdown/dingus)
-then pressing the Convert button should make this thing suddenly look a lot nicer.
-(You may need to scroll down below the HTML if it was in Source&Preview mode, or you can switch it
-over to just Preview mode for easier reading.)
+You can see the "rendered" version of (this document on github](https://github.com/b-adams/CS131Fa12Shared/blob/master/CLI_README.md).
 
+Alternately, you can `cat CLI_README.md` and then copy/paste the contents into the [Markdown Dingus](http://daringfireball.net/projects/markdown/dingus)
+then pressing the Convert button should make this thing suddenly look a lot nicer.
 
 # About #
 
 * Author: Prof. Bryant E. Adams
 * Date: August 5, 2012
-* Version: 1.2
+* Version: 1.3
