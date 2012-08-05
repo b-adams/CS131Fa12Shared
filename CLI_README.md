@@ -1,8 +1,3 @@
-Title: UNIX Command line info for CS131Fa12
-Author: Prof. Bryant E. Adams
-Date: August 5, 2012
-Comment: Version 1.1
-
 # Welcome to a UNIX command line! #
 
 This file lists some commands you're going to frequently need, as well as a few you may occasionally want.
@@ -223,3 +218,8 @@ then pressing the Convert button should make this thing suddenly look a lot nice
 over to just Preview mode for easier reading.)
 
 
+# About #
+
+* Author: Prof. Bryant E. Adams
+* Date: August 5, 2012
+* Version: 1.2
