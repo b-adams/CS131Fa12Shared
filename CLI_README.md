@@ -212,7 +212,7 @@ Typing tip: The UP ARROW
 
 This document was written using a minimalist markup language called [Markdown](http://daringfireball.net/projects/markdown/syntax). It's very handy.
 
-You can see the "rendered" version of (this document on github](https://github.com/b-adams/CS131Fa12Shared/blob/master/CLI_README.md).
+You can see the "rendered" version of [this document on github](https://github.com/b-adams/CS131Fa12Shared/blob/master/CLI_README.md).
 
 Alternately, you can `cat CLI_README.md` and then copy/paste the contents into the [Markdown Dingus](http://daringfireball.net/projects/markdown/dingus)
 then pressing the Convert button should make this thing suddenly look a lot nicer.
