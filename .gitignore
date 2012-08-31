@@ -1,2 +1,4 @@
 # Ignore shell scripts #
 *.sh
+# Ignore default compilation result #
+a.out
