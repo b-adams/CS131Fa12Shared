@@ -5,11 +5,14 @@
 //Declaration!
 char rejoice();
 
+//Partying will rejoice five times
+int party();
+
 int main(int argc, char* argv[])
 {
-  printf("v%d Hello, World!\n", 5);
+  printf("v%d Hello, World!\n", 6);
   //Function call
-  rejoice();
+  party();
   return 0;
 }
 
@@ -20,4 +23,14 @@ char rejoice()
   printf("\tHappy Birthday Kailin!\n");
   printf("**\tHappy Birthday Kailin!\t**\n");
   return 'q'; //Chosen arbitrarily
+}
+
+int party()
+{
+  rejoice();
+  rejoice();
+  rejoice();
+  rejoice();
+  rejoice();
+  return 33;
 }
