@@ -42,10 +42,10 @@ Command: `cat FILENAME.c`
 
 ## Compiling and running ##
 
-Command: `clang FILENAME.c -o PROGRAMNAME`
+Command: `clang FILENAME.c`
 
- * Briefly: Compile the code in FILENAME.c into a program that will be named PROGRAMNAME
- * Example: `clang cs131_program_1_astudent.c -o fnord`
+ * Briefly: Compile the code in FILENAME.c into a program that will be named *a.out*
+ * Example: `clang cs131_program_1_astudent.c`
  * More detail: The **C LANG**uage compiler reads in your source code and _compiles_ it into a bunch
    of ones and zeroes that a computer can actually run. Or, if there's a problem with your code and
    it's not "syntactically correct C", you'll get error messages which can often be helpful in
@@ -55,17 +55,15 @@ Command: `clang FILENAME.c -o PROGRAMNAME`
    If you don't understand what a message means, ask for help, and make sure to take notes on how
    that error message got resolved. You WILL see it again in the future, so learning what the messages
    mean is important!
- * How to choose the PROGRAMNAME: Don't put **ANY** periods in it! (You can accidentally overwrite your
-   code, and have to restore to a previous backup. You did take a snapshot recently, right...?)
-   Other than that, you can call your programs almost anything. I recommand you go with simple,
-   descriptive names, such as program_1 or prog1.
  * More information available using: `man clang`
  
-Command: `./PROGRAMNAME`
+Command: `./a.out`
 
- * Briefly: Run the program named PROGRAMNAME
- * Example: `./fnord`
+ * Briefly: Run the most recently compiled program
+ * Example: `./a.out`
  * When you use this: Right after you successfully compiled a program, to test that it works.
+ * Note: It's not enough to save changes to your .c file, you have to re-compile before running
+   the program will do anything different.
 
 ## Turning in and saving work ##
 
@@ -173,9 +171,9 @@ Command: `ls`
 
 ## Blowing things up ##
 
-Command: `rm PROGRAMNAME`
+Command: `rm FILENAME`
 
-* Briefly: **R**e**M**oves the file called PROGRAMNAME. Normal humans call this "deleting".
+* Briefly: **R**e**M**oves the file called FILENAME. Normal humans call this "deleting".
 * Example: `rm fnord`
 * **WARNING**: Whether a program, a code file, a directory, this readme, or any other precious data,
   the RM command is how you permanently get rid of it. So be careful with this one - "I accidentally RM'd
@@ -204,7 +202,7 @@ Typing tip: The UP ARROW
   arrow keys allow you to scroll through them. 
 * When you'd use this: You'll often have a terminal window open so you can compile your program, 
   run it, compile it again, run it again, and so on. Rather than repeatedly re-typing
-  `clang cs131_program_1_astudent.c -o fnord` then `./fnord` then `clang cs131_program_1_astudent.c -o fnord` then `./fnord`,
+  `clang cs131_program_1_astudent.c` then `./a.out` then `clang cs131_program_1_astudent.c` then `./a.out`,
   you could just type each of them once, than then only have to press UP ARROW twice and then enter from
   then on.
 
