@@ -1,0 +1,217 @@
+<html><body>
+
+<!-- Zen Coding ftw!  table>tr*8>(td.source>a)+(td.description)+(td>span.osx+span.linux+span.windows)+(td*6.class-$) -->
+
+<table border="1" style="border-width: 1px; border-color: black; border-style: solid;">
+<tbody>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<th class="expression">Expression</th>
+		<th class="category">Kind of expression</th>
+		<th class="type">Type</th>
+		<th class="value">Value</th>
+		<th class="sideFX">Side Effects</th>
+		<th class="page">Reference</th>
+	</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>5</code></td>
+	<td class="category">literal (integer)</td>
+	<td class="type">int</td>
+	<td class="value">5</td>
+	<td class="sideFX">none</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>21</code></td>
+	<td class="category">literal (integer)</td>
+	<td class="type">int</td>
+	<td class="value">21</td>
+	<td class="sideFX">none</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>"No way"</code></td>
+	<td class="category">literal (string)</td>
+	<td class="type">char*</td>
+	<td class="value">The sequence of 6 characters 'N', 'o', ' ', 'w', 'a', 'y'</td>
+	<td class="sideFX">None</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>"21"</code></td>
+	<td class="category">literal (string)</td>
+	<td class="type">char*</td>
+	<td class="value">The sequence of 2 characters '2', '1'</td>
+	<td class="sideFX">none</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>""</code></td>
+	<td class="category">literal (string)</td>
+	<td class="type">char*</td>
+	<td class="value">The sequence of 0 characters</td>
+	<td class="sideFX">none, aside from people getting confused</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>"Q"</code></td>
+	<td class="category">literal (string)</td>
+	<td class="type">char*</td>
+	<td class="value">The sequence of 1 characters 'Q' (a sequence, not a letter)</td>
+	<td class="sideFX">none</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>'Q'</code></td>
+	<td class="category">literal (character)</td>
+	<td class="type">char</td>
+	<td class="value">The letter Q (not a sequence, but an individual symbol)</td>
+	<td class="sideFX">none</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>'1'</code></td>
+	<td class="category">literal (character)</td>
+	<td class="type">char</td>
+	<td class="value">The digit 1 (not a number, a writeable symbol)</td>
+	<td class="sideFX">none</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>'\n'</code></td>
+	<td class="category">literal (character)</td>
+	<td class="type">char</td>
+	<td class="value">The newline character</td>
+	<td class="sideFX"></td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>3>4</code></td>
+	<td class="category">Comparison, is greater than?</td>
+	<td class="type">bool</td>
+	<td class="value">false</td>
+	<td class="sideFX">none</td>
+	<td class="page"><a href=""></a></td>
+</tr>
+<tr style="border-width: 1px; border-color: black; border-style: solid;">
+	<td class="expression"><code>3==printf("Foo")</code></td>
+	<td class="category">Comparison, is equal to?</td>
+	<td class="type">bool</td>
+	<td class="value">true</td>
+	<td class="sideFX">none, but a subexpression results in printing <pre>Foo</pre></td>
+	<td class="page"><a href=""></a></td>
+</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>printf("Hi")</code></td>
+		<td class="category">funcall (printf, 1 arg)</td>
+		<td class="type">int</td>
+		<td class="value">2</td>
+		<td class="sideFX">prints <pre>Hi</pre></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>printf("%d benjamins\nyo!", 2*2*2*2*2*2*2)</code></td>
+		<td class="category">funcall (printf, 2 arg)</td>
+		<td class="type">int</td>
+		<td class="value">17</td>
+		<td class="sideFX">Prints <pre>128 benjamins
+yo!</pre></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>throwParty("Hugh",3)</code></td>
+		<td class="category">funcall (throwParty, 2 arg)</td>
+		<td class="type">int</td>
+		<td class="value">4</td>
+		<td class="sideFX">Says happy birthday to Hugh</td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>9%4</code></td>
+		<td class="category">arithmetic (binary),  remainder</td>
+		<td class="type">int</td>
+		<td class="value">1</td>
+		<td class="sideFX">none</td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>3+4</code></td>
+		<td class="category">arithmetic (binary),  addition</td>
+		<td class="type">int</td>
+		<td class="value">7</td>
+		<td class="sideFX">none</td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>printf("Hi")+printf("Hi")</code></td>
+		<td class="category">arithmetic (binary),  addition</td>
+		<td class="type">int</td>
+		<td class="value">4</td>
+		<td class="sideFX">none, but subexpressions result in printing <pre>HiHi</pre></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>(3+4)/(5+2)</code></td>
+		<td class="category">arithmetic (binary),  division</td>
+		<td class="type">int</td>
+		<td class="value">1</td>
+		<td class="sideFX">none</td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>a=2</code></td>
+		<td class="category">assignment</td>
+		<td class="type">int</td>
+		<td class="value">2</td>
+		<td class="sideFX">stores the integer 2 in the variable with identifier <code>a</code></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>b='2'</code></td>
+		<td class="category">assignment</td>
+		<td class="type">char</td>
+		<td class="value">'2'</td>
+		<td class="sideFX">stores the character '2' in the variable with identifier <code>b</code></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>c=printf("yo")</code></td>
+		<td class="category">assignment</td>
+		<td class="type">int</td>
+		<td class="value">2</td>
+		<td class="sideFX">stores the integer 2 in the variable with identifier <code>c</code> and subexpression prints <pre>yo</pre></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>a=2+(b=2)</code></td>
+		<td class="category">Assignment</td>
+		<td class="type">int</td>
+		<td class="value">4</td>
+		<td class="sideFX">Stores 4 in variable <code>a</code>. Also, a subexpression stores 2 in variable <code>b</code></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>a = a+1</code> (assuming the previous line has run)</td>
+		<td class="category">assignment</td>
+		<td class="type">int (if <code>a</code> is an int variable)</td>
+		<td class="value">5 (assuming <code>a</code> was 4 before</td>
+		<td class="sideFX">Stores 5 in variable <code>a</code></td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>&amp;a</code></td>
+		<td class="category">reference</td>
+		<td class="type">int pointer</td>
+		<td class="value">the physical address where the contents of <code>a</code> are held</td>
+		<td class="sideFX">none</td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	<tr style="border-width: 1px; border-color: black; border-style: solid;">
+		<td class="expression"><code>*(&amp;a)</code></td>
+		<td class="category">dereference</td>
+		<td class="type">int</td>
+		<td class="value">the thing stored at the address <code>&amp;a</code>. I.e. <code>a</code></td>
+		<td class="sideFX">none</td>
+		<td class="page"><a href=""></a></td>
+	</tr>
+	</tbody>
+</table>
