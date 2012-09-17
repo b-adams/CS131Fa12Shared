@@ -2,7 +2,7 @@
  @file 120917_min_dox_example.c
  @author Prof. Adams
  @date Sept 17
- @status Working
+ @status Working and slightly changed
 */
 
 //File documentation block comes
