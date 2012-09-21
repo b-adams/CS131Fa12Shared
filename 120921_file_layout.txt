@@ -1,0 +1,45 @@
+/** @file 
+ (file documentation)
+*/
+
+/////////////////////////////// file documentation above
+
+#includes
+
+/////////////////////////////// includes above
+
+/** constant dox*/
+const int SOME_CONSTANT; 
+
+/** another constant dox*/
+const int ANOTHER_CONSTANT;
+
+/////////////////////////////// constant declarations and documentation above
+
+/** function dox*/
+void foo();
+
+/** function dox*/
+void bar();
+
+/////////////////////////////// function declarations and documentation above
+
+/** main dox */
+int main(int argc, char* argv[])
+{
+  //what actually gets run goes here
+}
+
+/////////////////////////////// main definition and documentation above
+
+void foo()
+{
+  //definition for foo
+}
+
+void bar()
+{
+  //definition for bar
+}
+
+/////////////////////////////// function definitions and documentation above
