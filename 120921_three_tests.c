@@ -7,19 +7,19 @@
  @brief Mystery function 1
  @returns An integer of some sort
  */
-int func1();
+int getNumberFromUser();
 
 /**
  @brief Mystery function 2
  @returns A character of some sort
  */
-char func2();
+char getACharacterFromUser();
 
 /**
  @brief Mystery function 3
  @returns Nothing
  */
-void func3();
+void notAGoodPause();
 
 /**
  @brief Entry point for the program
@@ -28,40 +28,44 @@ void func3();
 int main(void)
 {
 	printf("Line:%d\n",30);
-	func1();
+	getNumberFromUser();
 	printf("Line:%d\n",32);
-	func2();
+	getACharacterFromUser();
 	printf("Line:%d\n",34);
-	func3();
+	notAGoodPause();
 	printf("Line:%d\n",36);
+	notAGoodPause();
+	printf("Line:%d\n",38);
+	notAGoodPause();
+	printf("Line:%d\n",40);
 	return 0;
 }
 
-int func1()
+int getNumberFromUser()
 {
-	printf("***func1() called***\n");
+	printf("***getNumberFromUser() called***\n");
 	int var1;
-	printf("Message1\t");
+	printf("Enter a number: ");
 	scanf("%d", &var1);
-	printf("***func1() returning %d***\n", var1);
+	printf("***getNumberFromUser() returning %d***\n", var1);
 	return var1;
 }
 
-char func2()
+char getACharacterFromUser()
 {
-	printf("***func2() called***\n");
+	printf("***getACharacterFromUser() called***\n");
 	char var2;
-	printf("Message2\t");
+	printf("Please enter a character: ");
 	scanf(" %c", &var2);
-	printf("***func2() returning %c***\n", var2);
+	printf("***getACharacterFromUser() returning %c***\n", var2);
 	return var2;
 }
 
-void func3()
+void notAGoodPause()
 {
-	printf("***func3() called***\n");
+	printf("***notAGoodPause() called***\n");
 	printf("Message3\t");
 	scanf(" ");
-	printf("***func3() returning***\n");
+	printf("***notAGoodPause() returning***\n");
 	return;
 }
