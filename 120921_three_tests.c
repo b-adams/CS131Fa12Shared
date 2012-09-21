@@ -4,16 +4,10 @@
 #include <stdio.h>
 
 /**
- @brief Mystery function 1
- @returns An integer of some sort
- */
-int getNumberFromUser();
-
-/**
  @brief Mystery function 2
  @returns A character of some sort
  */
-char getACharacterFromUser();
+void pause();
 
 /**
  @brief Mystery function 3
@@ -28,37 +22,20 @@ void notAGoodPause();
 int main(void)
 {
 	printf("Line:%d\n",30);
-	getNumberFromUser();
+	pause();
 	printf("Line:%d\n",32);
-	getACharacterFromUser();
+	pause();
 	printf("Line:%d\n",34);
-	notAGoodPause();
+	pause();
 	printf("Line:%d\n",36);
-	notAGoodPause();
-	printf("Line:%d\n",38);
-	notAGoodPause();
-	printf("Line:%d\n",40);
 	return 0;
 }
 
-int getNumberFromUser()
+void pause()
 {
-	printf("***getNumberFromUser() called***\n");
-	int var1;
-	printf("Enter a number: ");
-	scanf("%d", &var1);
-	printf("***getNumberFromUser() returning %d***\n", var1);
-	return var1;
-}
-
-char getACharacterFromUser()
-{
-	printf("***getACharacterFromUser() called***\n");
 	char var2;
-	printf("Please enter a character: ");
+	printf("PAUSED. Press a key and then ENTER to continue");
 	scanf(" %c", &var2);
-	printf("***getACharacterFromUser() returning %c***\n", var2);
-	return var2;
 }
 
 void notAGoodPause()
