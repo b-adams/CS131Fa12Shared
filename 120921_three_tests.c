@@ -28,11 +28,13 @@ void func3();
 int main(void)
 {
 	printf("Line:%d\n",30);
-	printf("Line:%d\n",31);
+	func1();
 	printf("Line:%d\n",32);
-	printf("Line:%d\n",33);
+	func2();
 	printf("Line:%d\n",34);
-		return 0;
+	func3();
+	printf("Line:%d\n",36);
+	return 0;
 }
 
 int func1()
