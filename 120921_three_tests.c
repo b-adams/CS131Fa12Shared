@@ -52,7 +52,7 @@ char func2()
 	printf("***func2() called***\n");
 	char var2;
 	printf("Message2\t");
-	scanf("%c", &var2);
+	scanf(" %c", &var2);
 	printf("***func2() returning %c***\n", var2);
 	return var2;
 }
