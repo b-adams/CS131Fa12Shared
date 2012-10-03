@@ -3,9 +3,13 @@
 
 int getNumberBetween(int min, int max);
 
+void countDownByTwoFrom(int fromWhat);
+
 int main(void)
 {
     bool keepGoing;
+    
+    countDownByTwoFrom(23);
     
     keepGoing = true;
     printf("About to loop\n");
@@ -31,4 +35,22 @@ int getNumberBetween(int min, int max)
     }
     
     return userNumber;
+}
+
+void countDownByTwoFrom(int fromWhat)
+{
+    int theCount; //To keep track of where we are (the LCV)
+    theCount = fromWhat;
+    while(theCount > 0)
+    {
+        printf("%d \n", theCount);
+        theCount = theCount-2;
+    }
+    
+    theCount=0;
+    while(theCount<12)
+    {
+        printf("Ding!\n");
+        theCount=theCount+1;
+    }
 }
