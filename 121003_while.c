@@ -24,13 +24,10 @@ int getNumberBetween(int min, int max)
 {
     int userNumber;
     userNumber = min-1; //To give it a bad value
-    bool invalidEntry;
-    invalidEntry=true;
-    while(invalidEntry)
+    while((userNumber>max) || (userNumber<min)) //Boolean expression re-evaluated each time
     {
         printf("Please enter a number between %d and %d:", min, max);
         scanf("%d", &userNumber);
-        invalidEntry = ((userNumber>max) || (userNumber<min));
     }
     
     return userNumber;
