@@ -1,14 +1,17 @@
 # New functions
+
 ## fputc
 - (char, FILE*) -> char|EOF
 - Outputs character
 - Returns the character output
 - Returns EOF if there was a problem
+
 ## fgetc
 - (FILE*) -> char|EOF
 - Inputs character
 - Returns the character input
 - Returns EOF if there was a problem
+
 ## ungetc
 - (char, FILE*) -> char|EOF
 - Puts a character back in the stream
